@@ -16,14 +16,15 @@ html, body {
     --green: #44bd32;
     --red: #c23616;
     /* BACKGROUND */
-    --bc: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+    --bc: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
 }
 
 a {
     text-decoration: none;
 }
 
-/* MENU BURGER */
+                                                            /* MENU BURGER */
+
 .boutonBurger {
     position: fixed;
     top: 20px;
@@ -102,4 +103,44 @@ a {
     color: #000;
     margin: 20px 0 20px 0;
     font-size: 1.5em;
+}
+
+                                                            /* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 20px;
+    height: auto;
+}
+
+                                                            /* TITRE */
+
+#titre {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    background: var(--bc), url(../images/france.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 40px;
+    font-family: var(--hyeon);
+    letter-spacing: 1px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #titre {
+        grid-column-start: 1;
+    }
 }
