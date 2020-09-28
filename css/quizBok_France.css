@@ -22,3 +22,84 @@ html, body {
 a {
     text-decoration: none;
 }
+
+/* MENU BURGER */
+.boutonBurger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+    z-index: 5;
+}
+
+.span1 {
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    height: 4px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+.span1Open {
+    top: 18px;
+    transform: rotate(-45deg);
+}
+
+.span2 {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    height: 4px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+.span2Open {
+    opacity: 0;
+}
+
+.span3 {
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    height: 4px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+.span3Open {
+    top: 18px;
+    transform: rotate(45deg);
+}
+
+.menuBurger {
+    position: fixed;
+    top: 0;
+    left: -55vw;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    box-shadow: 4px 0 4px #ccc;
+    transition-duration: 0.5s;
+}
+
+.menuBurgerOpen {
+    left: 0;
+}
+
+.menuBurger>a {
+    color: #000;
+    margin: 20px 0 20px 0;
+    font-size: 1.5em;
+}
