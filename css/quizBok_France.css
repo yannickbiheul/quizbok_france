@@ -33,6 +33,7 @@ a {
     /* border: 1px solid #000; */
     cursor: pointer;
     z-index: 5;
+    opacity: 0;
 }
 
 .span1 {
@@ -83,7 +84,7 @@ a {
     position: fixed;
     top: 0;
     left: -100vw;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -92,6 +93,7 @@ a {
     background-color: #fff;
     transition-duration: 0.5s;
     z-index: 4;
+    border-right: 1px solid #ccc;
 }
 
 .menuBurgerOpen {
@@ -104,6 +106,25 @@ a {
     font-size: 1.5em;
 }
 
+/* NAV */
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px #000;
+}
+
+nav>a {
+    color: #000;
+    margin: 0 20px 0 20px;
+}
+
                                                             /* MAIN */
 
 main {
@@ -113,7 +134,7 @@ main {
                                                             /* TITRE */
 
 .titre {
-    height: 250px;
+    height: 310px;
     background: var(--bc), url(../images/france.jpg);
     background-size: cover;
     background-position: center;
@@ -178,17 +199,39 @@ main {
                                                             /* MEDIA QUERIES */
 
 @media screen and (max-width: 1200px) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0;
+    .boutonBurger {
+        opacity: 1;
+    }
+    .menuBurger {
+        width: 100vw;
+        border: none;
     }
 
-    #titre {
+    nav {
+        display: none;
+    }
+
+    .form-quiz {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #question1 {
         grid-column: 1 / span 2;
     }
 
-    .question {
-        grid-column: 1 / span 2 !important;
-        box-shadow: 0 4px 4px #ccc;
+    #question2 {
+        grid-column: 1 / span 2;
+    }
+
+    #question3 {
+        grid-column: 1 / span 2;
+    }
+
+    #question4 {
+        grid-column: 1 / span 2;
+    }
+
+    #question5 {
+        grid-column: 1 / span 2;
     }
 }
