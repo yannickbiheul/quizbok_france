@@ -32,31 +32,130 @@
 
     <main>
         <!-- TITRE -->
-        <section id="titre">
+        <div class="titre">
             <h1>QuizBok - France</h1>
-            <p>France : histoire et géographie</p>
-        </section>
+            <p>Version 0.1</p>
+        </div>
 
-        <!-- Questions -->
-        <section id="question1" class="question">
-            <h2>Question 1</h2>
-        </section>
+        <div class="container-global">
 
-        <section id="question2" class="question">
-            <h2>Question 2</h2>
-        </section>
+            <!-- FORMULAIRE -->
+            <form class="form-quiz">
 
-        <section id="question3" class="question">
-            <h2>Question 3</h2>
-        </section>
+                <!-- QUESTION 1 --> 
 
-        <section id="question4" class="question">
-            <h2>Question 4</h2>
-        </section>
+                <div class="blocQuestion" id="question1">
+                    <h4>Combien y'a t-il d'habitants en France (environ) ?</h4>
+                    <div>
+                        <input type="radio" id="57" name="q1" value="a">
+                        <label for="57">57 Millions</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="67" name="q1" value="b">
+                        <label for="67">67 Millions</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="77" name="q1" value="c">
+                        <label for="77">77 Millions</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="87" name="q1" value="d">
+                        <label for="87">87 Millions</label>
+                    </div>
+                </div>
 
-        <section id="question5" class="question">
-            <h2>Question 5</h2>
-        </section>
+                <!-- QUESTION 2 -->
+
+                <div class="blocQuestion" id="question2">
+                    <h4>Quel président ne fait pas partie de la cinquième république ?</h4>
+                    <div>
+                        <input type="radio" id="poher" name="q2" value="a">
+                        <label for="poher">Alain Poher</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mitterand" name="q2" value="b">
+                        <label for="mitterand">François Mitterand</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hollande" name="q2" value="c">
+                        <label for="hollande">François Hollande</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="coty" name="q2" value="d">
+                        <label for="coty">René Coty</label>
+                    </div>
+                </div>
+
+                <!-- QUESTION 3 -->
+
+                <div class="blocQuestion" id="question3">
+                    <h4>À quel département correspond le code 41 ?</h4>
+                    <div>
+                        <input type="radio" id="jura" name="q3" value="a">
+                        <label for="jura">Jura</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="landes" name="q3" value="b">
+                        <label for="landes">Landes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="loireCher" name="q3" value="c">
+                        <label for="loireCher">Loire-et-Cher</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="loire" name="q3" value="d">
+                        <label for="loire">Loire</label>
+                    </div>
+                </div>
+
+                <!-- QUESTION 4 -->
+
+                <div class="blocQuestion" id="question4">
+                    <h4>À quel peintre français doit-on le tableau "Le radeau de la Méduse" ?</h4>
+                    <div>
+                        <input type="radio" id="monet" name="q4" value="a">
+                        <label for="monet">Claude Monet</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cezanne" name="q4" value="b">
+                        <label for="cezanne">Paul Cezanne</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gericault" name="q4" value="c">
+                        <label for="gericault">Jean Louis Théodore Géricault</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="corot" name="q4" value="d">
+                        <label for="corot">Jean Baptiste Corot</label>
+                    </div>
+                </div>
+
+                <!-- QUESTION 5 -->
+
+                <div class="blocQuestion" id="question5">
+                    <h4>Quel est le plus long fleuve français ?</h4>
+                    <div>
+                        <input type="radio" id="rhone" name="q5" value="a">
+                        <label for="rhone">Le Rhône</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="laLoire" name="q5" value="b">
+                        <label for="laLoire">La Loire</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="seine" name="q5" value="c">
+                        <label for="seine">La Seine</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="odet" name="q5" value="d">
+                        <label for="odet">L' Odet</label>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        
 
         <!-- VALIDATION -->
         <section id="validation">
