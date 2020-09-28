@@ -135,7 +135,7 @@ main {
 
 .titre {
     height: 310px;
-    background: var(--bc), url(../images/france.jpg);
+    background: var(--bc), url(../images/paris.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
