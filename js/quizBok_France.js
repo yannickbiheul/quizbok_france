@@ -20,6 +20,7 @@ for (let i = 0; i < elts.length; i++) {
     elts[i].addEventListener("click", toggleMenu);
 }
 
+
 /* QUESTIONS */
 
 let question1 = {
@@ -67,6 +68,7 @@ let question5 = {
     bonneReponse: "La Loire"
 };
 
+
 /* BLOC QUESTION 1 */
 
 let laQuestion1 = document.querySelector(".laQuestion1");
@@ -74,6 +76,7 @@ let laReponse1Q1 = document.querySelector(".laReponse1Q1");
 let laReponse2Q1 = document.querySelector(".laReponse2Q1");
 let laReponse3Q1 = document.querySelector(".laReponse3Q1");
 let laReponse4Q1 = document.querySelector(".laReponse4Q1");
+let reponseJoueurQ1 = "";
 
 laQuestion1.textContent = question1.question;
 laReponse1Q1.textContent = question1.reponse1;
@@ -93,6 +96,7 @@ let inputsQ1 = [input1Q1, input2Q1, input3Q1, input4Q1];
 
 for (let i = 0; i < inputsQ1.length; i++) {
     inputsQ1[i].addEventListener("input", function(e) {
+        reponseJoueurQ1 = e.target.value;
         if (e.target.value === question1.bonneReponse) {
             console.log(e.target.value + " : Bonne réponse !");
         } else {
@@ -100,3 +104,4 @@ for (let i = 0; i < inputsQ1.length; i++) {
         }
     })
 }
+
