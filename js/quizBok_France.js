@@ -1,4 +1,5 @@
 /* MENU BURGER */
+
 let boutonBurger = document.querySelector(".boutonBurger");
 let span1 = document.querySelector(".span1");
 let span2 = document.querySelector(".span2");
@@ -20,6 +21,7 @@ for (let i = 0; i < elts.length; i++) {
 }
 
 /* QUESTIONS */
+
 let question1 = {
     question: "Combien y'a t-il d'habitants en France (environ) ?",
     reponse1: "57 Millions",
@@ -64,3 +66,37 @@ let question5 = {
     reponse4: "L' Odet",
     bonneReponse: "La Loire"
 };
+
+/* BLOC QUESTION 1 */
+
+let laQuestion1 = document.querySelector(".laQuestion1");
+let laReponse1Q1 = document.querySelector(".laReponse1Q1");
+let laReponse2Q1 = document.querySelector(".laReponse2Q1");
+let laReponse3Q1 = document.querySelector(".laReponse3Q1");
+let laReponse4Q1 = document.querySelector(".laReponse4Q1");
+
+laQuestion1.textContent = question1.question;
+laReponse1Q1.textContent = question1.reponse1;
+laReponse2Q1.textContent = question1.reponse2;
+laReponse3Q1.textContent = question1.reponse3;
+laReponse4Q1.textContent = question1.reponse4;
+
+let input1Q1 = document.getElementById("57");
+input1Q1.value = question1.reponse1;
+let input2Q1 = document.getElementById("67");
+input2Q1.value = question1.reponse2;
+let input3Q1 = document.getElementById("77");
+input3Q1.value = question1.reponse3;
+let input4Q1 = document.getElementById("87");
+input4Q1.value = question1.reponse4;
+let inputsQ1 = [input1Q1, input2Q1, input3Q1, input4Q1];
+
+for (let i = 0; i < inputsQ1.length; i++) {
+    inputsQ1[i].addEventListener("input", function(e) {
+        if (e.target.value === question1.bonneReponse) {
+            console.log(e.target.value + " : Bonne réponse !");
+        } else {
+            console.log(e.target.value + " : Mauvaise réponse !");
+        }
+    })
+}
