@@ -190,6 +190,11 @@ main {
     padding: 20px;
 }
 
+.blocQuestion input[type="radio"] {
+    transform: scale(1.8);
+    margin: 10px;
+}
+
 #question1 {
     grid-column: 2 / span 2;
     grid-row: 1 / span 1;
@@ -220,9 +225,9 @@ main {
 #validation {
     grid-column: 2 / span 2;
     grid-row: 7 / span 1;
-    border: 1px solid #ccc;
-    box-shadow: 4px 4px 4px #ccc;
-    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 4px 4px 4px #ccc; */
+    /* border-radius: 5px; */
     margin-top: 20px;
     padding: 20px;
     display: flex;
@@ -234,18 +239,30 @@ main {
 #consignes {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-#boutonValid {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: var(--blue);
+.boutons {
+    display: flex;
+}
+
+.bouton {
+    margin: 20px 20px;
     color: #fff;
     padding: 20px;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     box-shadow: 4px 4px 4px #ccc;
+}
+
+.bouton1 {
+    background-color: var(--green);
+}
+
+
+.bouton2 {
+    background-color: var(--red);
 }
 
 /* FOOTER */

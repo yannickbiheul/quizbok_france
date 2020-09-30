@@ -59,22 +59,22 @@
                 <!-- QUESTION 1 --> 
 
                 <div class="blocQuestion" id="question1">
-                    <h4 class="laQuestion1"></h4>
+                    <h4>Combien y'a t-il d'habitants en France (environ) ?</h4>
                     <div>
                         <input type="radio" id="57" name="q1" value="a">
-                        <label class="laReponse1Q1" for="57"></label>
+                        <label for="57">57 Millions</label>
                     </div>
                     <div>
                         <input type="radio" id="67" name="q1" value="b">
-                        <label class="laReponse2Q1" for="67"></label>
+                        <label for="67">67 Millions</label>
                     </div>
                     <div>
                         <input type="radio" id="77" name="q1" value="c">
-                        <label class="laReponse3Q1" for="77"></label>
+                        <label for="77">77 Millions</label>
                     </div>
                     <div>
                         <input type="radio" id="87" name="q1" value="d">
-                        <label class="laReponse4Q1" for="87"></label>
+                        <label for="87">87 Millions</label>
                     </div>
                 </div>
 
@@ -169,8 +169,12 @@
                 <!-- VALIDATION -->
 
                 <div class="blocValidation" id="validation">
-                    <p id="consignes">Le paragraphe des consignes</p>
-                    <button type="submit" id="boutonValid">VALIDER</button>
+                    <p id="consignes"></p>
+                    <div class="boutons">
+                        <button type="submit" id="boutonValid" class="bouton bouton1">VALIDER</button>
+                        <button id="boutonSuppr" class="bouton bouton2">RECOMMENCER</button>
+                    </div>
+                    
                 </div>
 
             </form>
