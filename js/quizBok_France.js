@@ -6,6 +6,7 @@ const titreResultat = document.querySelector("#titreResultat");
 const aideResultat = document.querySelector("#aideResultat");
 const noteResultat = document.querySelector("#noteResultat");
 const toutesLesQuestions = document.querySelectorAll(".blocQuestion");
+const boutonValider = document.querySelector("#boutonValider");
 let verifTableau = [];
 
 form.addEventListener("submit", (e) => {
@@ -29,6 +30,7 @@ function verifFunc(tabResultats) {
     }
     // console.log(verifTableau);
     afficherResultats(verifTableau);
+    couleursFonction(verifTableau);
     verifTableau = [];
 }
 
@@ -70,3 +72,23 @@ function afficherResultats(tabCheck) {
             "Oups, cas inattendu !";
     }
 }
+
+function couleursFonction(tabValBool) {
+    for (let j = 0; j < tabValBool.length; j++) {
+        if (tabValBool[j] === true) {
+            toutesLesQuestions[j].style.background = "lightgreen";
+        } else {
+            toutesLesQuestions[j].style.background = "#ffb8b8";
+            toutesLesQuestions[j].classList.add('echec');
+            setTimeout(() => {
+                toutesLesQuestions[j].classList.remove('echec');
+            }, 500);
+        }
+    }
+}
+
+toutesLesQuestions.forEach(item => {
+    item.addEventListener("click", () => {
+        item.style.background = "white";
+    })
+});
