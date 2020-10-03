@@ -9,7 +9,7 @@
     /* border: 1px solid #000; */
     cursor: pointer;
     z-index: 5;
-    opacity: 0;
+    display: none;
 }
 
 .span1 {
@@ -80,4 +80,15 @@
     color: #000;
     margin: 20px 0 20px 0;
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    .boutonBurger {
+        display: flex;
+    }
+
+    .menuBurger {
+        width: 100vw;
+        border: none;
+    }
 }

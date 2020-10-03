@@ -54,11 +54,13 @@ nav {
 }
 
 .nav2>a {
-    color: #ccc;
+    color: #fff;
+    opacity: 0.9;
     margin: 0 20px 0 20px;
 }
 .nav2>a:hover {
     color: #fff;
+    opacity: 1;
 }
 
 .nav3 {
