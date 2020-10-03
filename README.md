@@ -20,3 +20,7 @@ Inspiré du cours ["20 projets en JavaScript"](https://www.ecole-du-web.net/p/20
 * [Flat Ui colors](https://flatuicolors.com/)
 * [Burst](https://burst.shopify.com/)
 * [FileZilla](https://filezilla-project.org/)
+
+# Prochaines versions
+
+Version 2 : Ajout de 5 questions.
