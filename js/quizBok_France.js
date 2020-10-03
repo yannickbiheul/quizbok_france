@@ -1,3 +1,5 @@
+// QUIZBOK FRANCE
+
 const form = document.querySelector(".form-quiz");
 let tableauResultats = [];
 const reponses = ["b", "d", "c", "c", "b"];
