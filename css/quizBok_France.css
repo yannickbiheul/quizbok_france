@@ -226,7 +226,7 @@ footer hr {
 
 @media screen and (max-width: 1200px) {
     .boutonBurger {
-        opacity: 1;
+        display: flex;
     }
 
     .menuBurger {
