@@ -23,4 +23,6 @@ Inspiré du cours ["20 projets en JavaScript"](https://www.ecole-du-web.net/p/20
 
 # Prochaines versions
 
-Version 2 : Ajout de 5 questions.
+Version 2 : Affichage des questions aléatoire.
+
+Version 3 : Ajout de 5 questions.
