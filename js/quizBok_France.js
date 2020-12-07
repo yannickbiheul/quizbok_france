@@ -13,7 +13,7 @@ let verifTableau = [];
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    for (i = 1; i < 6; i++) {
+    for (let i = 1; i < 6; i++) {
         tableauResultats.push(document.querySelector(`input[name="q${i}"]:checked`).value);
     }
     // console.log(tableauResultats);
@@ -70,7 +70,7 @@ function afficherResultats(tabCheck) {
             noteResultat.innerText = "0/5";
             break;
         default: 
-            "Oups, cas inattendu !";
+            titreResultat.innerText = "Oups, cas inattendu !";
     }
 }
 
